@@ -21,8 +21,9 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "php/form-process.php",
+        url: "https://script.google.com/macros/s/AKfycbwId2BNAUiM6GKhLRraQ8kCu9914VmJhw3nMwUhtEwEwVzem9jqqq571T-QBlCAz6m1/exec",
         data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+        console.log(text)
         success : function(text){
             if (text == "success"){
                 formSuccess();
